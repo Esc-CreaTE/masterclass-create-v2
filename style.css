@@ -163,14 +163,14 @@ body {
 
 .identification {
     min-height: 100vh;
-    padding: 150px 8%;
+    padding: 120px 8%;
     background: #F4EFE7;
     color: #211e1a;
 }
 
 .section-intro {
     max-width: 850px;
-    margin: 0 auto 80px;
+    margin: 0 auto 65px;
     text-align: center;
 }
 
