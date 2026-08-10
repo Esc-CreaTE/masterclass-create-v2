@@ -210,16 +210,28 @@ body {
     letter-spacing: 3px;
     color: #9A7A43;
 }
-
-.problem ul {
-    list-style: none;
+.experience-list {
+    display: flex;
+    flex-direction: column;
 }
 
-.problem li {
+.experience {
     padding: 18px 0;
     border-bottom: 1px solid rgba(33, 30, 26, 0.12);
+}
+
+.experience:first-child {
+    padding-top: 0;
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+.experience p {
+    font-family: Georgia, serif;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .solution {
@@ -253,7 +265,7 @@ body {
 .transformation p {
     font-family: Georgia, serif;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 @media (max-width: 800px) {
