@@ -17,8 +17,8 @@ body {
 /* HERO */
 
 .hero {
-    min-height: 100vh;
-    padding: 80px 8%;
+    min-height: auto;
+    padding: 95px 8% 65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
