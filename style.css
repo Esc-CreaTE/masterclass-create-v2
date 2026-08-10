@@ -223,14 +223,41 @@ body {
 .solution {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.solution-text {
+.transformation-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.transformation {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(33, 30, 26, 0.12);
+}
+
+.transformation:first-child {
+    padding-top: 0;
+}
+
+.transformation:last-child {
+    border-bottom: none;
+}
+
+.number {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #9A7A43;
+    padding-top: 7px;
+}
+
+.transformation p {
     font-family: Georgia, serif;
-    font-size: clamp(26px, 3vw, 40px);
-    line-height: 1.35;
-    margin-bottom: 35px;
+    font-size: 23px;
+    line-height: 1.4;
 }
 
 @media (max-width: 800px) {
