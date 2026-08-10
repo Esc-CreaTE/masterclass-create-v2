@@ -193,7 +193,15 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    gap: 0;
+}
+
+.column {
+    padding: 45px 55px;
+}
+
+.problem {
+    border-right: 1px solid rgba(33, 30, 26, 0.15);
 }
 
 .column {
