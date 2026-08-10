@@ -221,8 +221,8 @@ body {
 
 .experience-list,
 .transformation-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(5, minmax(92px, auto));
 }
 
 .experience,
