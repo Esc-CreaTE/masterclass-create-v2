@@ -74,10 +74,8 @@ body {
     background: #B89B5E;
     color: #171513;
 }
-
 .scroll-indicator {
-    position: absolute;
-    bottom: 35px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +85,6 @@ body {
     text-transform: uppercase;
     color: rgba(247, 242, 234, 0.45);
 }
-
 .arrow {
     font-size: 22px;
     color: #B89B5E;
