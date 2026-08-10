@@ -27,7 +27,13 @@ body {
     position: relative;
     overflow: hidden;
 }
-
+.brand-name {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: rgba(247, 242, 234, 0.7);
+    margin-bottom: 18px;
+}
 .eyebrow {
     font-size: 12px;
     letter-spacing: 4px;
