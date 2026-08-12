@@ -484,3 +484,157 @@ body {
     }
 
 }
+/* =========================
+   MI HISTORIA
+========================= */
+
+.story {
+    padding: 120px 25px;
+    background: #171513;
+    color: #F7F2EA;
+}
+
+.story-intro {
+    max-width: 800px;
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.story-eyebrow {
+    margin: 0 0 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #B89B5E;
+}
+
+.story-intro h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 60px);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.story-columns {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.story-column {
+    padding: 0 45px;
+    border-right: 1px solid rgba(247, 242, 234, 0.15);
+}
+
+.story-column:first-child {
+    padding-left: 0;
+}
+
+.story-column:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.story-number {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #B89B5E;
+}
+
+.story-column h3 {
+    margin: 0 0 25px;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+.story-lead {
+    margin: 0 0 25px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.story-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.story-column li {
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.78;
+}
+
+.story-highlight {
+    position: relative;
+}
+
+.story-highlight h3 {
+    color: #B89B5E;
+}
+
+.story-closing {
+    max-width: 700px;
+    margin: 75px auto 0;
+    text-align: center;
+}
+
+.story-closing p {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+
+    .story {
+        padding: 85px 25px;
+    }
+
+    .story-intro {
+        margin-bottom: 55px;
+    }
+
+    .story-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .story-column,
+    .story-column:first-child,
+    .story-column:last-child {
+        padding: 40px 0;
+        border-right: none;
+        border-bottom: 1px solid rgba(247, 242, 234, 0.15);
+    }
+
+    .story-column:first-child {
+        padding-top: 0;
+    }
+
+    .story-column:last-child {
+        border-bottom: none;
+    }
+
+    .story-column h3 {
+        font-size: 30px;
+    }
+
+    .story-closing {
+        margin-top: 55px;
+    }
+
+    .story-closing p {
+        font-size: 21px;
+    }
+
+}
