@@ -638,3 +638,79 @@ body {
     }
 
 }
+/* =========================
+   CTA FINAL
+========================= */
+
+.final-cta {
+    padding: 130px 25px;
+    background: #171513;
+    color: #F7F2EA;
+    text-align: center;
+}
+
+.final-cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.final-cta-eyebrow {
+    margin: 0 0 25px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #B89B5E;
+}
+
+.final-cta h2 {
+    margin: 0 auto 30px;
+    max-width: 850px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.12;
+    font-weight: 400;
+}
+
+.final-cta-text {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    font-size: 17px;
+    line-height: 1.6;
+    opacity: 0.78;
+}
+
+.final-cta-button {
+    display: inline-block;
+    padding: 19px 45px;
+    border: 1px solid #B89B5E;
+    color: #F7F2EA;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+
+.final-cta-button:hover {
+    background: #B89B5E;
+    color: #171513;
+}
+
+@media (max-width: 800px) {
+
+    .final-cta {
+        padding: 90px 25px;
+    }
+
+    .final-cta h2 {
+        font-size: 40px;
+    }
+
+    .final-cta-text {
+        font-size: 16px;
+    }
+
+    .final-cta-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
