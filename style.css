@@ -643,6 +643,8 @@ body {
 ========================= */
 
 .final-cta {
+    width: 100%;
+    margin: 0;
     padding: 130px 25px;
     background: #171513;
     color: #F7F2EA;
