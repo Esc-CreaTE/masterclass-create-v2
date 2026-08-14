@@ -10,24 +10,24 @@
     <link rel="stylesheet" href="pago.css">
 </head>
 
-<body>
+ <body>
 
     <main class="payment-page">
 
         <section class="payment-header">
-            <p class="payment-eyebrow">CREA<strong>TE</strong></p>
+            <p class="payment-eyebrow">DA EL PASO</p>
 
-            <h1>Da el paso</h1>
+            <h1>Elige cómo quieres empezar.</h1>
 
-            <p class="payment-intro">
-                Elige el proceso que quieres comenzar.
+            <p class="payment-subtitle">
+                Dos caminos. Un mismo propósito: dejar de repetir lo que ya no quieres vivir y empezar a construir desde otro lugar.
             </p>
         </section>
 
 
         <section class="payment-options">
 
-            <!-- FASE 1 -->
+            <!-- ACÉRCATE -->
 
             <article class="payment-card">
 
@@ -35,38 +35,32 @@
 
                 <h2>🌱 AcércaTE</h2>
 
-                <p class="payment-price">
-                    77 € <span>/ mes</span>
+                <p class="payment-description">
+                    Vuelve a ser quien Dios te creó para ser.
                 </p>
 
-                <div class="payment-divider"></div>
+                <div class="payment-price">
+                    77 € <span>/ mes</span>
+                </div>
 
-                <h3>¿Qué incluye?</h3>
-
-                <ul>
-                    <li>✔ Mentorías en VIVO con Indara.</li>
-                    <li>✔ Proceso AcércaTE paso a paso.</li>
-                    <li>✔ Acceso a mentorías grabadas.</li>
-                    <li>✔ Bonus: Construir una relación íntima y auténtica con Dios.</li>
-                </ul>
-
-                <div class="payment-acceptance">
+                <div class="payment-terms">
 
                     <label>
                         <input type="checkbox" class="terms-checkbox">
                         <span>
                             He leído y acepto las
-                            <a href="#" target="_blank">Condiciones del Servicio</a>
+                            <a href="#" target="_blank">condiciones del servicio</a>
                             y la
-                            <a href="#" target="_blank">Política de Privacidad</a>.
+                            <a href="#" target="_blank">política de privacidad</a>.
                         </span>
                     </label>
 
                 </div>
 
                 <a
-                    href="#"
+                    href="TU_ENLACE_PAYPAL_ACERCATE"
                     class="payment-button disabled"
+                    target="_blank"
                     aria-disabled="true"
                 >
                     PAGAR CON PAYPAL
@@ -75,42 +69,31 @@
             </article>
 
 
-            <!-- FASE 2 -->
+            <!-- RÍNDETE -->
 
-            <article class="payment-card featured">
+            <article class="payment-card payment-card-featured">
 
                 <p class="payment-phase">FASE 2</p>
 
                 <h2>🕊 RíndeTE</h2>
 
-                <p class="payment-price">
-                    647 € <span>/ acceso durante 6 meses</span>
+                <p class="payment-description">
+                    Aprende a construir la vida que Dios puso en tu corazón.
                 </p>
 
-                <div class="payment-divider"></div>
+                <div class="payment-price">
+                    647 € <span>/ acceso durante 6 meses</span>
+                </div>
 
-                <h3>¿Qué incluye?</h3>
-
-                <ul>
-                    <li>✔ Llamada 1:1 inicial con Indara.</li>
-                    <li>✔ Mentorías en VIVO con Indara — Sala RíndeTE.</li>
-                    <li>✔ Acceso completo a AcércaTE.</li>
-                    <li>✔ Mentoría semanal — Sala AcércaTE incluida.</li>
-                    <li>✔ Formación exclusiva CreaTE en 13 pasos.</li>
-                    <li>✔ Comunidad privada de WhatsApp.</li>
-                    <li>✔ Herramientas para construir la vida que Dios puso en tu corazón.</li>
-                    <li>✔ Bonus: Aprende a entrenar y comer por ti mismo.</li>
-                </ul>
-
-                <div class="payment-acceptance">
+                <div class="payment-terms">
 
                     <label>
                         <input type="checkbox" class="terms-checkbox">
                         <span>
                             He leído y acepto las
-                            <a href="#" target="_blank">Condiciones del Servicio</a>
+                            <a href="#" target="_blank">condiciones del servicio</a>
                             y la
-                            <a href="#" target="_blank">Política de Privacidad</a>.
+                            <a href="#" target="_blank">política de privacidad</a>.
                         </span>
                     </label>
 
@@ -119,16 +102,18 @@
                 <div class="payment-buttons">
 
                     <a
-                        href="#"
+                        href="TU_ENLACE_WISE"
                         class="payment-button disabled"
+                        target="_blank"
                         aria-disabled="true"
                     >
                         PAGAR CON WISE
                     </a>
 
                     <a
-                        href="#"
-                        class="payment-button secondary disabled"
+                        href="TU_ENLACE_PAYPAL_RINDETE"
+                        class="payment-button payment-button-secondary disabled"
+                        target="_blank"
                         aria-disabled="true"
                     >
                         PAGAR CON PAYPAL
@@ -141,6 +126,40 @@
         </section>
 
     </main>
+
+
+    <script>
+
+        const cards = document.querySelectorAll(".payment-card");
+
+        cards.forEach(card => {
+
+            const checkbox = card.querySelector(".terms-checkbox");
+            const buttons = card.querySelectorAll(".payment-button");
+
+            checkbox.addEventListener("change", function () {
+
+                buttons.forEach(button => {
+
+                    if (this.checked) {
+
+                        button.classList.remove("disabled");
+                        button.removeAttribute("aria-disabled");
+
+                    } else {
+
+                        button.classList.add("disabled");
+                        button.setAttribute("aria-disabled", "true");
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
 
 </body>
 
