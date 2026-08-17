@@ -496,6 +496,7 @@ body {
     padding: 120px 25px;
     background: #211e1a;
     color: #F7F2EA;
+    box-shadow: 0 0 0 80px #F4EFE7;
 }
 
 .story-intro {
