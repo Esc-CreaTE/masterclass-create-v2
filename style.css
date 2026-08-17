@@ -19,6 +19,8 @@ body {
 .hero {
     min-height: auto;
     padding: 95px 8% 65px;
+    background: #171513;
+    color: #F7F2EA;
     display: flex;
     flex-direction: column;
     justify-content: center;
