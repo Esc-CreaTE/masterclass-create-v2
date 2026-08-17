@@ -827,6 +827,7 @@ body {
     margin-top: 5px;
     font-family: Georgia, serif;
     font-size: 32px;
+    text-align: center;
 }
 
 .payment-price span {
@@ -919,7 +920,7 @@ body {
 }
 
 .payment-button.disabled {
-    opacity: 0.35;
+    opacity: 1;
     cursor: not-allowed;
     pointer-events: none;
 }
