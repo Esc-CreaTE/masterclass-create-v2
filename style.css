@@ -491,6 +491,8 @@ body {
 ========================= */
 
 .story {
+    width: 92%;
+    margin: 0 auto;
     padding: 120px 25px;
     background: #211e1a;
     color: #F7F2EA;
