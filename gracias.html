@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¡Ya estás dentro! | CreaTE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #171513;
+            color: #F7F2EA;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 25px;
+        }
+
+        .thank-you {
+            width: 100%;
+            max-width: 750px;
+        }
+
+        .brand {
+            margin-bottom: 35px;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            letter-spacing: 3px;
+            color: rgba(247, 242, 234, 0.7);
+        }
+
+        .eyebrow {
+            margin-bottom: 28px;
+            font-size: 11px;
+            letter-spacing: 4px;
+            color: #B89B5E;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 68px);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+        }
+
+        .message {
+            font-family: Georgia, serif;
+            font-size: 21px;
+            line-height: 1.7;
+            color: rgba(247, 242, 234, 0.82);
+        }
+
+        .message strong {
+            display: block;
+            margin: 28px auto;
+            max-width: 650px;
+            font-weight: 400;
+            color: #F7F2EA;
+        }
+
+        .closing {
+            margin-top: 35px;
+            font-family: Georgia, serif;
+            font-size: 23px;
+            color: #B89B5E;
+        }
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 30px 25px;
+            }
+
+            .brand {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+
+            .message {
+                font-size: 18px;
+            }
+
+            .closing {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="thank-you">
+
+        <p class="brand">CreaTE</p>
+
+        <p class="eyebrow">MASTERCLASS GRATUITA</p>
+
+        <h1>¡Ya estás dentro! 🤍</h1>
+
+        <div class="message">
+
+            <p>
+                Has reservado tu acceso a la masterclass.
+            </p>
+
+            <strong>
+                El 2 de septiembre recibirás en tu email el enlace para verla.
+            </strong>
+
+            <p>
+                Guarda la fecha.
+            </p>
+
+        </div>
+
+        <p class="closing">
+            Nos vemos dentro.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
