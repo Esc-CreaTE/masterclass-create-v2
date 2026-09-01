@@ -76,6 +76,18 @@ body {
     background: #B89B5E;
     color: #171513;
 }
+.hero-watermark {
+    position: absolute;
+    width: 420px;
+    max-width: 70%;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+}
+.hero > *:not(.hero-watermark) {
+    position: relative;
+    z-index: 1;
+}
 .scroll-indicator {
     margin-top: 45px;
     display: flex;
