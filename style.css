@@ -76,14 +76,34 @@ body {
     background: #B89B5E;
     color: #171513;
 }
+.hero {
+    min-height: auto;
+    padding: 95px 8% 65px;
+    background: #171513;
+    color: #F7F2EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LOGO COMO MARCA DE AGUA */
 .hero-watermark {
     position: absolute;
-    width: 420px;
-    max-width: 70%;
-    opacity: 0.06;
-    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 75%;
+    opacity: 0.055;
     z-index: 0;
+    pointer-events: none;
 }
+
+/* CONTENIDO DEL HERO POR ENCIMA DEL LOGO */
 .hero > *:not(.hero-watermark) {
     position: relative;
     z-index: 1;
